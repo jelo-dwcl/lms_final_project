@@ -34,10 +34,7 @@ class Database {
         return $this->conn;
     }
 
-<<<<<<< HEAD
-=======
     // ADDED: safety checker (para madaling ma-debug)
->>>>>>> 59927c367aa56d2e61ecccd4cb396ac82abac028
     public function isConnected() {
         return $this->conn !== null;
     }
