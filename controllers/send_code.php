@@ -1,4 +1,5 @@
 <?php
+//pass reset
 session_start();
 
 require_once __DIR__ . "/MessageController.php";
