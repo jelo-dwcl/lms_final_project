@@ -85,7 +85,7 @@ foreach ($grades as $g) {
 body{
     margin:0;
     font-family:'Poppins', sans-serif;
-    background:#eef2f7;
+    background:linear-gradient(135deg, #153c6b, #7d784a);;
 }
 
 .header{

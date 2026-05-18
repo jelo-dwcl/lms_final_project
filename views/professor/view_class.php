@@ -103,14 +103,14 @@ foreach ($all_grades as $g) {
 *{ margin:0; padding:0; box-sizing:border-box; }
 
 body{
-    background:#eef2f7;
+    background:linear-gradient(135deg, #153c6b, #7d784a);;
     font-family:'Poppins',sans-serif;
-    color:#1e293b;
+    color:#2c3e50;
 }
 
 /* HEADER */
 .header{
-    background:#1e293b;
+    background:#2c3e50;
     color:white;
     padding:25px 30px;
     display:flex;
@@ -152,7 +152,7 @@ body{
 }
 
 .nav a:hover, .nav a.active{
-    background:#1e293b;;
+    background:#2c3e50;;
     color:white;
 }
 
