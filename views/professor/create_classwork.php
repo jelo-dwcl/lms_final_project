@@ -141,9 +141,7 @@ $stmt->execute([
 
 ]);
 
-/* =========================
-   SUCCESS MESSAGE
-========================= */
+/* SUCCESS MESSAGE */
 if ($type === "announcement") {
 
     $_SESSION['success'] =
@@ -155,9 +153,7 @@ if ($type === "announcement") {
         "✅ Classwork created successfully.";
 }
 
-/* =========================
-   REDIRECT
-========================= */
+/*REDIRECT */
 header(
     "Location: ../professor/view_class.php?id=" . $class_id
 );

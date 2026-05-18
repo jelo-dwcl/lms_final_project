@@ -47,9 +47,7 @@ if (isset($_SESSION['user'])) {
 
 <body>
 
-<!-- =========================
-INTRO VIDEO
-========================= -->
+<!--INTRO VIDEO -->
 <div id="intro">
     <video id="introVideo" autoplay muted>
         <source src="../../assets/video/intro.mp4" type="video/mp4">
@@ -62,9 +60,7 @@ INTRO VIDEO
 
 <img src="../../assets/images/logo.png" class="logo-left" alt="Logo">
 
-<!-- =========================
-MESSAGE DISPLAY
-========================= -->
+<!--MESSAGE DISPLAY -->
 <?php
 if (isset($_SESSION['success_msg'])) {
     echo "<p class='msg'>" . $_SESSION['success_msg'] . "</p>";
@@ -77,9 +73,7 @@ if (isset($_SESSION['error_msg'])) {
 }
 ?>
 
-<!-- =========================
-CHOICE BOX
-========================= -->
+<!-- CHOICE BOX -->
 <div class="choice-box">
     <h2 style="font-size:50px; font-family:Arial; color: white; text-shadow: 3px 3px 0px black;"><b>Welcome</b></h2>
 
@@ -87,9 +81,7 @@ CHOICE BOX
     <button onclick="openModal('registerModal')">Sign Up</button>
 </div>
 
-<!-- =========================
-LOGIN MODAL
-========================= -->
+<!--LOGIN MODAL -->
 <div id="loginModal" class="modal">
     <div class="modal-content">
 
@@ -111,9 +103,7 @@ LOGIN MODAL
     </div>
 </div>
 
-<!-- =========================
-REGISTER MODAL
-========================= -->
+<!--REGISTER MODAL-->
 <div id="registerModal" class="modal">
     <div class="modal-content">
 
