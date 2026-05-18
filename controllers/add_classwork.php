@@ -89,9 +89,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $tmpName =
             $_FILES['file']['tmp_name'];
-
+//did not allow duplicate
         $fileName =
             time() . "_" .
+
+            //Removes dangerous/special characters.
             preg_replace(
                 "/[^a-zA-Z0-9.\-_]/",
                 "",
@@ -105,7 +107,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $tmpName,
             $targetPath
         );
-
+//Store file location into database.
         $file_path =
             "uploads/" . $fileName;
     }
@@ -179,4 +181,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     exit;
 }
-?>
+?>  

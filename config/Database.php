@@ -34,7 +34,7 @@ class Database {
         return $this->conn;
     }
 
-    // ✅ ADDED: safety checker (para madaling ma-debug)
+    // ADDED: safety checker (para madaling ma-debug)
     public function isConnected() {
         return $this->conn !== null;
     }
